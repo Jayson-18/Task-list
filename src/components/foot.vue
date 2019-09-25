@@ -14,6 +14,8 @@ export default {
     select () {
       if(this.todos.length != 0){
         return this.todos.reduce((total, todo)=> total + (todo.finished ? 1 : 0), 0)
+      }else{
+        return 0;
       }
     },
     isChecked: {
